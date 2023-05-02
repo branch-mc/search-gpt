@@ -33,17 +33,13 @@ export OPENAI_API_KEY=<your-api-key>
 
 ## Usage
 
-1. Open a terminal window.
-2. Navigate to the directory where you saved the `search-gpt.py` file.
-3. Run the following command to start the script:
+Run the following command to start the script:
 
 ```
 python search-gpt.py
 ```
 
-4. The script will prompt you to enter a URL. Enter the URL of the web page you want to extract information from and generate a response to.
-5. The script will process the question and generate a response.
-6. The script will continue to prompt you for questions until you close the terminal window.
+The script will prompt you to enter a URL to summarize.
 
 You can also provide the URL as the first argument to the script
 

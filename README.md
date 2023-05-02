@@ -13,6 +13,7 @@ Examples using available GPT tools and APIs to search and summarize the web
 - OpenAI API key (get one [here](https://beta.openai.com/signup/))
 
 ## Installation
+First download or clone this repo.
 
 1. Install Python 3 if not already installed on your machine.
 2. Open a terminal window.
@@ -29,8 +30,6 @@ export OPENAI_API_KEY=<your-api-key>
 ```
 
    Replace `<your-api-key>` with your actual OpenAI API key.
-
-5. Download or clone this repo.
 
 ## Usage
 

@@ -30,7 +30,7 @@ export OPENAI_API_KEY=<your-api-key>
 
    Replace `<your-api-key>` with your actual OpenAI API key.
 
-5. Download the `search-gpt.py` file and save it to a directory on your machine.
+5. Download or clone this repo.
 
 ## Usage
 

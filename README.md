@@ -4,7 +4,7 @@ Examples using available GPT tools and APIs to search and summarize the web
 
 ## Description
 
-`search-gpt` is a Python script that uses the OpenAI API to generate responses to questions inputted by the user. The script extracts relevant content from a web page and passes it to the OpenAI API to generate a response. The web page is determined based on the user's input. The script runs in the command line and requires an OpenAI API key.
+`search-gpt` is a Python script that uses the OpenAI API to summarize web pages. The script extracts relevant content from a web page and passes it to the OpenAI API to summarize. The script runs in the command line and requires an OpenAI API key.
 
 ## Requirements
 

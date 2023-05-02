@@ -54,5 +54,4 @@ python search-gpt.py https://example-site
 
 
 ## Limitations
-This is example proof of concept code.  It requires bullet proofing on all levels if you're thinking of using it for anything more than exploratory exercises.
-
+This is proof of concept code and should be treated as such.  It is tested on Mac OS so you may need to tweak to run elsewhere.

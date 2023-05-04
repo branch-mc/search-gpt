@@ -4,7 +4,6 @@ import random
 import os
 import requests
 import openai
-import openai
 import re
 import tiktoken
 from bs4 import BeautifulSoup, Comment
@@ -64,7 +63,7 @@ def crawl(url, visited=None):
         noise.decompose()
     for tag in soup.find_all(["form","iframe","noscript","img","script", "style", "meta", "link", "input", "button", "select", "textarea"]):
         tag.decompose()
-    for comment in soup.find_all(text=lambda text: isinstance(text, Comment)):
+    for comment in soup.find_all(string=lambda text: isinstance(text, Comment)):
         comment.extract()
 
     # Break the content down to work under the max tokens

@@ -16,7 +16,6 @@ def print_news_links(query, days=30):
     # Customize the search query to fetch news in the last 30 days
     query = f"{query} after:{from_date}"
 
-    links = []
     for url in search(query, num_results=10, lang='en'):
         cleaned_url = clean_url(url)
         print(cleaned_url)

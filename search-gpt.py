@@ -43,20 +43,20 @@ def crawl(url, visited=None):
     print("== " + soup.title.string)
 
     # Get the links, ignore dupes or visited
-    links = set()
-    for link in soup.find_all('a'):
-        href = link.get('href')
-        if (href is None) :
-            continue        
-        if href.startswith('/'):
-            href = urlparse(url)._replace(path=href).geturl()
+    # links = set()
+    # for link in soup.find_all('a'):
+    #     href = link.get('href')
+    #     if (href is None) :
+    #         continue        
+    #     if href.startswith('/'):
+    #         href = urlparse(url)._replace(path=href).geturl()
         
-        uri = urlparse(href)
-        href = uri.scheme + '://' + uri.netloc + uri.path
+    #     uri = urlparse(href)
+    #     href = uri.scheme + '://' + uri.netloc + uri.path
 
-        if uri.netloc == domain_name and href not in visited:
-            links.add(href)
-        link.decompose() # remove the link
+    #     if uri.netloc == domain_name and href not in visited:
+    #         links.add(href)
+    #     link.decompose() # remove the link
 
     # Remove ads, menus, footers by finding and removing elements with certain classes or IDs
     for noise in soup.select(".ad, #ad, .ads, #ads, .menu, #menu, .nav, #nav, .footer, #footer, .copy, #copy"):
@@ -72,7 +72,6 @@ def crawl(url, visited=None):
     # text = soup.prettify();
     text = unidecode(soup.get_text(separator='\n')).strip()
     text = re.sub(r'\n+', '\n', text)
-    
     # Summarize
     summarize(text)
     # print(text)
